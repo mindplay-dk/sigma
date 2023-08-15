@@ -6,7 +6,7 @@
   "scripts": {
     "bench": "tsx src/index.ts",
     "bench:many": "tsx src/many/index.ts",
-    "bench:json": "tsx src/json/index.ts",
+    "bench:json": "tsx src/json/index.ts -- sigma:defer && tsx src/json/index.ts -- sigma:grammar && tsx src/json/index.ts -- parjs",
     "bench:tuple": "tsx src/tuple/index.ts"
   },
   "dependencies": {
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/benchmark": "^2.1.2",
+    "@types/node": "^20.5.0",
     "tsx": "^3.10.1"
   }
 }

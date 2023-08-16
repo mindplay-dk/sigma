@@ -10,11 +10,10 @@
     "bench:tuple": "tsx src/tuple/index.ts"
   },
   "dependencies": {
-    "benny": "^3.7.1",
+    "iso-bench": "^1.1.4",
     "parjs": "0.12.7"
   },
   "devDependencies": {
-    "@types/benchmark": "^2.1.2",
     "@types/node": "^20.5.0",
     "tsx": "^3.10.1"
   }

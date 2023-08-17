@@ -10,7 +10,7 @@
     "bench:tuple": "tsx src/tuple/index.ts"
   },
   "dependencies": {
-    "iso-bench": "^1.1.4",
+    "iso-bench": "^2.0.4",
     "parjs": "0.12.7"
   },
   "devDependencies": {

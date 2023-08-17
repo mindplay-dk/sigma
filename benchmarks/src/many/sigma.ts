@@ -8,13 +8,9 @@ const Parser = many(string('x!'))
 export function parse(text: string): Array<string> {
   const result = run(Parser).with(text)
 
-  switch (result.isOk) {
-    case true: {
-      return result.value
-    }
-
-    case false: {
-      return []
-    }
+  if (result.isOk) {
+    return result.value
   }
+
+  return []
 }
